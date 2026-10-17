@@ -17,7 +17,7 @@ const projects = [
     tech: ["JavaScript", "Stockfish", "HTML", "CSS"],
     image: "assets/images/projetos/gambyte.png",
     demo: "https://gambyte.com.br",
-    repo: "https://github.com/fidamaa/Gambyte"
+    repo: ""
   },
   {
     title: "PENSAÍ",
