@@ -15,7 +15,7 @@ const projects = [
     title: "Gambyte",
     description: "Análise de partidas de xadrez a partir do PGN. Classifica cada lance, calcula a precisão de cada lado e mostra o gráfico de vantagem ao longo da partida, usando o motor Stockfish.",
     tech: ["JavaScript", "Stockfish", "HTML", "CSS"],
-    image: "",
+    image: "assets/images/projetos/gambyte.png",
     demo: "https://gambyte.com.br",
     repo: ""
   },
@@ -23,7 +23,7 @@ const projects = [
     title: "PENSAÍ",
     description: "Treino de Matemática do ENEM contra o relógio. São dez questões de Matemática Básica, Estatística e Geometria, com tempo limite por dificuldade e um ranking dos mais rápidos.",
     tech: ["JavaScript", "HTML", "CSS"],
-    image: "",
+    image: "assets/images/projetos/pensai.png",
     demo: "https://pensaienem.web.app",
     repo: ""
   }
@@ -51,7 +51,7 @@ function projectCard(p) {
   const exampleBadge = p.placeholder ? '<span class="badge">Exemplo, substituir</span>' : "";
   let media;
   if (p.image) {
-    media = `<div class="card-media"><img src="${escapeHTML(p.image)}" alt="Captura de tela do projeto ${escapeHTML(p.title)}" loading="lazy" width="640" height="400">${exampleBadge}</div>`;
+    media = `<div class="card-media has-preview"><img src="${escapeHTML(p.image)}" alt="Captura de tela do projeto ${escapeHTML(p.title)}" loading="lazy" width="640" height="400">${host ? `<div class="site-frame preview-address"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="host">${escapeHTML(host)}</span></div>` : ""}${exampleBadge}</div>`;
   } else if (host) {
     // Sem imagem: mostra uma "janela de navegador" com o endereço do site
     media = `<div class="card-media is-site" aria-hidden="true"><div class="site-frame"><span class="dots"><i></i><i></i><i></i></span><span class="host">${escapeHTML(host)}</span></div></div>`;
