@@ -167,6 +167,12 @@ ul, dl { margin: 0; padding: 0; list-style: none; }
 .service dt { font-family: var(--font-display); font-weight: 500; font-size: 1.25rem; }
 .service dd { margin: 0; color: var(--muted); max-width: 34rem; }
 .note { margin-top: 2rem; max-width: 40rem; color: var(--muted); }
+.work-process { margin-top: 3rem; }
+.work-process h3 { font-size: 1.4rem; }
+.work-process ol { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 1.5rem; }
+.work-process li { border-top: 1px solid var(--line); padding-top: 1rem; }
+.work-process strong { display: block; font-size: 1rem; margin-bottom: .6rem; }
+.work-process li span { color: var(--muted); font-size: .95rem; }
 
 /* ===== Contato ===== */
 .contact-list { margin-top: 2rem; max-width: 34rem; border-top: 1px solid var(--line); }

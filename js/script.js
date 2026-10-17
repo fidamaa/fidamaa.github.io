@@ -17,7 +17,7 @@ const projects = [
     tech: ["JavaScript", "Stockfish", "HTML", "CSS"],
     image: "assets/images/projetos/gambyte.png",
     demo: "https://gambyte.com.br",
-    repo: ""
+    repo: "https://github.com/fidamaa/Gambyte"
   },
   {
     title: "PENSAÍ",
@@ -62,8 +62,8 @@ function projectCard(p) {
   const tags = p.tech.map(t => `<li>${escapeHTML(t)}</li>`).join("");
 
   const links = [];
-  if (p.demo) links.push(`<a href="${escapeHTML(p.demo)}" target="_blank" rel="noopener noreferrer">Ver demonstração</a>`);
-  if (p.repo) links.push(`<a href="${escapeHTML(p.repo)}" target="_blank" rel="noopener noreferrer">Código no GitHub</a>`);
+  if (p.demo) links.push(`<a href="${escapeHTML(p.demo)}" target="_blank" rel="noopener noreferrer">Ver projeto</a>`);
+  if (p.repo) links.push(`<a href="${escapeHTML(p.repo)}" target="_blank" rel="noopener noreferrer">Ver código</a>`);
 
   return `
     <article class="card reveal">
